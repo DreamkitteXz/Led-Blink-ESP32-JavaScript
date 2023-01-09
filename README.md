@@ -5,3 +5,16 @@
     <h3>Circuito LED</h3>
       <p>Aqui esta o circuito que iremos utilizar para piscar o led. Foram utilizados os pinos <code>D22</code> e <code>GND</code>.</p>
       <img src="Images\circuit.png" alt="Screen" width="627" height="457">
+<h3>Executando o código</h3>
+<p>Execute o seguinte código no Espruino IDE</p>
+<p align='center'><pre>
+<code>
+var led = new Pin(4);
+var toggle=1;
+
+setInterval(function() {
+    toggle=!toggle;
+  digitalWrite(led, toggle);
+}, 500);</code>
+</pre></p>
+<p>Você deve ver o LED conectado ao D22 piscando</p>
