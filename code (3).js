@@ -1,4 +1,4 @@
-var led = new Pin(23);
+var led = new Pin(22);
 var toggle=1;
 
 setInterval(function() {
