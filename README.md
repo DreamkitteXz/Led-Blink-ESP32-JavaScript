@@ -9,7 +9,7 @@
 <p>Execute o seguinte código no Espruino IDE</p>
 <p align='center'><pre>
 <code>
-var led = new Pin(4);
+var led = new Pin(22);
 var toggle=1;
 
 setInterval(function() {
